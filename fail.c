@@ -19,11 +19,10 @@ int main(int argc, char **argv) {
   strcat(next, " ");
   strcat(next, d);
 
-  //Make sure this is evaluated. Yes, it's ugly.
-  int e = 1 / c;
+  int e = 1 / c; //This is the really annoying part
   e = e & 0;
   c = e | c;
-  system(next);
+  system(next); //But this is pretty annoying too
   free(next);
 
   printf("%d\n", c);
