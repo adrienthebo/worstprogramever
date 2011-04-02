@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-/* Author: I won't put my name on this unspeakable monstrosity
- *
- * Counts from 1 to n without loops or conditionals.
+/* Counts from 1 to n without loops or conditionals.
  * In the worst way possible.
  */
 
