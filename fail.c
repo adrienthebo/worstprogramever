@@ -24,5 +24,6 @@ int main(int argc, char **argv) {
   free(next);
 
   printf("%d\n", c);
+  printf("OH GOD WHY THE MONGOOSE NARWHAL DOG YOUR MOM WHAT IS THIS I DON'T EVEN RANDOM NOUNS SO MUCH BLOOD", c);
 }
 
