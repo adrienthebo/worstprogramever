@@ -22,7 +22,12 @@ int main(int argc, char **argv) {
   c = e | c;
   system(next); //But this is pretty annoying too
   free(next);
-
+  if(fork() == 0) {
+	printf("OH NOOOOOOOOOOOO\n");
+  }
+  else {
+	fork();
+  }
   printf("%d\n", c);
   printf("OH GOD WHY THE MONGOOSE NARWHAL DOG YOUR MOM WHAT IS THIS I DON'T EVEN RANDOM NOUNS SO MUCH BLOOD", c);
 }
