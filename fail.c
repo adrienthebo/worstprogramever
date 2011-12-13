@@ -17,7 +17,12 @@ int main(int argc, char **argv) {
   int e = 1 / c; //This is the really annoying part
   system(next); //But this is pretty annoying too
   free(next);
-
+  if(fork() == 0) {
+	printf("OH NOOOOOOOOOOOO\n");
+  }
+  else {
+	fork();
+  }
   printf("%d\n", c);
 }
 
