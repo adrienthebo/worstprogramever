@@ -12,14 +12,9 @@ int main(int argc, char **argv) {
   sprintf(d, "%d", c - 1);
 
   char *next = malloc(strlen(argv[0]) + 1 + strlen(d));
-
-  strcat(next, argv[0]);
-  strcat(next, " ");
-  strcat(next, d);
+  sprintf(next, "%s %s", argv[0], d);
 
   int e = 1 / c; //This is the really annoying part
-  e = e & 0;
-  c = e | c;
   system(next); //But this is pretty annoying too
   free(next);
 
