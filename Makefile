@@ -1,16 +1,17 @@
 # Makefile
 
 CC=gcc
+CFLAGS=-O0
 
 .PHONY: all clean
 
 all: fail
 
 fail: fail.o
-	$(CC) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^
 
 fail.o: fail.c
-	$(CC) -c $<	
+	$(CC) $(CFLAGS) -c $<
 
-clean: 
+clean:
 	rm -f fail.o fail
